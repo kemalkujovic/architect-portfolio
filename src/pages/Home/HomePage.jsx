@@ -4,4 +4,4 @@ const HomePage = () => {
   return <p>home page</p>;
 };
 
-export default Projects;
+export default HomePage;
