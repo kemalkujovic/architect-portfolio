@@ -5,7 +5,7 @@ const MainNavigation = (props) => {
   return (
     <div className={classes.mainContainer}>
       <div className={classes.headerLogo}>
-        <NavLink to="/" className={classes.logo}>
+        <NavLink to="/" className={`${classes.logo} `}>
           Arch Amra
         </NavLink>
       </div>
