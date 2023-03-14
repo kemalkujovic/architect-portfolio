@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 const MainNavigation = (props) => {
   return (
     <div className={classes.mainContainer}>
