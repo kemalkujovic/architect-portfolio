@@ -1,16 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-}
-.active {
-  color: red;
+  font-family: sans-serif;
 }
 
 .mainContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+  background-color: purple;
   flex-direction: column;
   text-align: center;
 }
@@ -24,7 +22,7 @@
 }
 .navBar a {
   font-size: 15px;
-  text-decoration: none;
+  text-decoration: inherit;
   color: white;
   margin-right: 0.7rem;
   margin-left: 0.7rem;
@@ -43,7 +41,11 @@
   margin: 10px 0px;
 }
 .headerText {
-  font-size: 19px;
+  padding: 3px;
+  font-size: 17px;
   background-color: rgb(74, 74, 74);
   color: rgb(255, 255, 255);
+}
+.active {
+  text-decoration: revert !important;
 }
