@@ -1,0 +1,21 @@
+.containerContact {
+  display: flex;
+  flex-direction: column;
+}
+.containerContact h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+}
+
+.contactForm span {
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.contactForm p {
+  line-height: 2rem;
+}
+
+.headerContact {
+  margin-bottom: 15px;
+}

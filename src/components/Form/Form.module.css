@@ -1,0 +1,40 @@
+* {
+  font-family: sans-serif;
+}
+.form {
+  width: 30vw;
+  border-radius: 12px;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form input {
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  position: relative;
+  width: 100%;
+  padding-top: 15px;
+}
+.form label {
+  position: absolute;
+  left: 0;
+}
+
+.inputWrapper {
+  margin-bottom: 50px;
+}
+.wrapperButton {
+  text-align: center;
+}
+.wrapperButton button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border: 1px solid;
+}
