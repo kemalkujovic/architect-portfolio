@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
-const Navigation = ({ handleClick, children }) => {
+const Navigation = ({ handleClick }) => {
   return (
     <nav>
       <ul>
@@ -51,7 +51,6 @@ const Navigation = ({ handleClick, children }) => {
           </NavLink>
         </li>
       </ul>
-      {children}
     </nav>
   );
 };
