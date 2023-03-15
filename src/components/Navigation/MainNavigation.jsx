@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Navigation from "./Navigation";
-const MainNavigation = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-  function menuHandler() {
-    setIsOpen(!isOpen);
-  }
-  function handleClick() {
-    setIsOpen(false);
-  }
+import { useSelector, useDispatch } from "react-redux";
+import { handlerActions } from "../../store";
+const MainNavigation = () => {
+  const dispatch = useDispatch();
+  const show = useSelector((state) => state.showMenu);
+
+  const toggleCounterHandler = () => {
+    dispatch(handlerActions.displayMenu());
+  };
+
   return (
     <>
       {/* Logo and Text header */}
@@ -29,18 +31,18 @@ const MainNavigation = (props) => {
           <Navigation></Navigation>
         </div>
         <div className={classes.hamburgerIcon}>
-          <MenuIcon onClick={menuHandler} fontSize="large"></MenuIcon>
+          <MenuIcon onClick={toggleCounterHandler} fontSize="large"></MenuIcon>
         </div>
       </div>
       {/* Hamburger Menu */}
-      {isOpen && (
+      {show && (
         <div className={classes["menu-container"]}>
           <CloseIcon
             className={classes.closeBtn}
             fontSize="large"
-            onClick={menuHandler}
+            onClick={toggleCounterHandler}
           ></CloseIcon>
-          <Navigation handleClick={handleClick} />
+          <Navigation handleClick={toggleCounterHandler} />
         </div>
       )}
     </>

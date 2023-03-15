@@ -13,7 +13,7 @@ const Navigation = ({ handleClick }) => {
               isActive ? classes.active : undefined
             }
           >
-            Home
+            HOME
           </NavLink>
         </li>
         <li>
@@ -24,7 +24,7 @@ const Navigation = ({ handleClick }) => {
               isActive ? classes.active : undefined
             }
           >
-            Projects
+            PROJECTS
           </NavLink>
         </li>
 
@@ -36,7 +36,7 @@ const Navigation = ({ handleClick }) => {
             }
             onClick={handleClick}
           >
-            About
+            ABOUT
           </NavLink>
         </li>
         <li>
@@ -47,7 +47,7 @@ const Navigation = ({ handleClick }) => {
               isActive ? classes.active : undefined
             }
           >
-            Contact
+            CONTACT
           </NavLink>
         </li>
       </ul>
