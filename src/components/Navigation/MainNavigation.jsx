@@ -14,7 +14,7 @@ const MainNavigation = (props) => {
   }
   return (
     <>
-      {/* logo */}
+      {/* Logo and Text header */}
       <div className={classes.mainContainer}>
         <div className={classes.headerLogo}>
           <NavLink to="/" className={classes.logo}>
@@ -24,7 +24,7 @@ const MainNavigation = (props) => {
         <div>
           <h1 className={classes.headerText}>ARCHITECTURE / INTERIOR DESIGN</h1>
         </div>
-        {/* navbar */}
+        {/* Main navigation */}
         <div className={classes["top-menu"]}>
           <Navigation></Navigation>
         </div>
