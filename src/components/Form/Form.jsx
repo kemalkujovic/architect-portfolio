@@ -17,6 +17,7 @@ const Form = (props) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
+
     setSuccessful("");
     setModal(true);
     setLoader(true);
@@ -30,9 +31,11 @@ const Form = (props) => {
       className = "green";
       setSuccessful("Thank you for contacting me");
       setLoader(false);
+      e.target.reset();
     } catch (error) {
       setSuccessful("Something went wrong, please try again");
       setLoader(false);
+      e.target.reset();
     }
   };
 
