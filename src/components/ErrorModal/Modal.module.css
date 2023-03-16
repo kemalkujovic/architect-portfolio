@@ -38,8 +38,9 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .modal {
-    left: 10%;
+    left: 16%;
+    width: 70%;
   }
 }
