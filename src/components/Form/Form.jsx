@@ -2,6 +2,7 @@ import classes from "./Form.module.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Oval } from "react-loader-spinner";
+import Modal from "../ErrorModal/Modal";
 import ErrorModal from "../ErrorModal/ErrorModal";
 let className;
 const Form = (props) => {
@@ -16,6 +17,7 @@ const Form = (props) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    setSuccessful("");
     setModal(true);
     setLoader(true);
     try {
