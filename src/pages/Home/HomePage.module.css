@@ -1,0 +1,25 @@
+.backgroundContainer {
+  background-color: #194869;
+  height: 300px;
+}
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper img {
+  width: 90%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .backgroundContainer {
+    background-color: #194869;
+    height: auto;
+  }
+  .imageWrapper img {
+    width: 100%;
+    margin-top: 10px;
+    height: 100%;
+  }
+}
