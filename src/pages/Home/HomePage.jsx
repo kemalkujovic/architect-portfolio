@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "../Contact/Contact";
 import classes from "./HomePage.module.css";
 import Footer from "../../components/Footer/Footer";
 const HomePage = () => {

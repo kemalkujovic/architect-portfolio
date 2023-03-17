@@ -23,10 +23,10 @@ const Form = (props) => {
     setLoader(true);
     try {
       await emailjs.sendForm(
-        "service_3ca2cy5",
-        "template_db52oq4",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "6qGSj8MWgwS5D-RL"
+        process.env.REACT_APP_USER_ID
       );
       className = "green";
       setSuccessful("Thank you for contacting me");
