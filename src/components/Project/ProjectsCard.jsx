@@ -24,6 +24,9 @@ const ProjectsCard = (props) => {
               src={props.src}
               alt="Project"
               loading="lazy"
+              style={{
+                transition: "all 1s ease",
+              }}
             />
           </div>
         </Grid>
