@@ -5,6 +5,7 @@ import Projects from "./pages/Projects/Projects";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import HomePage from "./pages/Home/HomePage";
+import axios from "axios";
 function App() {
   const router = createBrowserRouter([
     {

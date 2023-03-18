@@ -2,6 +2,8 @@ import { Grid } from "@mui/material";
 import React from "react";
 import classes from "./ProjectsCard.module.css";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const ProjectsCard = (props) => {
   return (
     <div className={classes.container}>
@@ -17,7 +19,12 @@ const ProjectsCard = (props) => {
         </Grid>
         <Grid item lg={6} xs={12}>
           <div className={classes.imageWrapper}>
-            <img src={props.src} alt="Project" />
+            <LazyLoadImage
+              effect="blur"
+              src={props.src}
+              alt="Project"
+              loading="lazy"
+            />
           </div>
         </Grid>
       </Grid>

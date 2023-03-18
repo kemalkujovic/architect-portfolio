@@ -15,7 +15,6 @@ const Contact = () => {
           <Form></Form>
         </Grid>
       </Grid>
-      <Footer></Footer>
     </>
   );
 };
