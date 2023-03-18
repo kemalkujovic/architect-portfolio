@@ -1,10 +1,11 @@
 import React from "react";
 import classes from "./HomePage.module.css";
 import Footer from "../../components/Footer/Footer";
+import ProjectsHomePage from "../../components/Project/ProjectsHomePage";
 const HomePage = () => {
   return (
     <>
-      <div>
+      {/* <div>
         <div className={classes.backgroundContainer}>
           <div className={classes.imageWrapper}>
             <img
@@ -13,8 +14,9 @@ const HomePage = () => {
             />
           </div>
         </div>
-      </div>
-      <Footer></Footer>
+      </div> */}
+      <ProjectsHomePage />
+      {/* <Footer></Footer> */}
     </>
   );
 };
