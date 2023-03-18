@@ -4,12 +4,14 @@
   justify-content: space-evenly;
   flex-direction: column;
   padding: 10% 10%;
-  gap: 12vh;
+  gap: 15vh;
+  margin-top: 280px;
 }
 
 @media screen and (max-width: 800px) {
   .projetContainer {
     padding: 5vh 5vw;
     display: block;
+    margin: 0;
   }
 }

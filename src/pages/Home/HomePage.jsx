@@ -5,7 +5,7 @@ import ProjectsHomePage from "../../components/Project/ProjectsHomePage";
 const HomePage = () => {
   return (
     <>
-      {/* <div>
+      <div>
         <div className={classes.backgroundContainer}>
           <div className={classes.imageWrapper}>
             <img
@@ -14,7 +14,7 @@ const HomePage = () => {
             />
           </div>
         </div>
-      </div> */}
+      </div>
       <ProjectsHomePage />
       {/* <Footer></Footer> */}
     </>
