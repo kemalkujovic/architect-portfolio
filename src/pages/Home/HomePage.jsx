@@ -21,7 +21,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <ProjectsHomePage />
+      <div className={classes.projectsWrapper}>
+        <ProjectsHomePage />
+      </div>
       <Contact></Contact>
       <Footer></Footer>
     </>

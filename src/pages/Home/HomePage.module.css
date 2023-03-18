@@ -12,7 +12,9 @@
   width: 90%;
   margin-top: 10px;
 }
-
+.projectsWrapper {
+  margin-top: 280px;
+}
 @media screen and (max-width: 800px) {
   .backgroundContainer {
     background-color: #194869;
