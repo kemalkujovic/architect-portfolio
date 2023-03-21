@@ -9,11 +9,9 @@ const Contact = () => {
     <>
       <div className={classes["page-container"]}>
         <Grid direction="row" container className={classes.contact}>
-          <div className={classes.main}>
-            <Grid item lg={4} xs={12}>
-              <ContactForm></ContactForm>
-            </Grid>
-          </div>
+          <Grid item lg={4} xs={12}>
+            <ContactForm></ContactForm>
+          </Grid>
           <Grid item lg={8} xs={12}>
             <Form></Form>
           </Grid>

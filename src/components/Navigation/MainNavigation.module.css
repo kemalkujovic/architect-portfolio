@@ -48,8 +48,14 @@
 
 .hamburgerIcon {
   display: none;
+  z-index: 100;
 }
-
+.activeMenu {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  z-index: 100;
+}
 @media screen and (max-width: 800px) {
   .top-menu {
     display: none;
