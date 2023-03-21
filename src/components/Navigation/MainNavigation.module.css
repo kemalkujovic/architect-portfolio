@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 .mainContainer {
@@ -24,6 +23,7 @@
 .headerLogo {
   margin: 10px 0px;
 }
+
 .headerText {
   padding: 3px;
   font-size: 17px;

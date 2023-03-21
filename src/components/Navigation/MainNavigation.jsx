@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
 import Navigation from "./Navigation";
-import { useSelector, useDispatch } from "react-redux";
-import { handlerActions } from "../../store";
 import Hamburger from "hamburger-react";
-
+import { Animation } from "react-easy-animations";
 const MainNavigation = () => {
   const [isOpen, setOpen] = useState(false);
-  const dispatch = useDispatch();
-  const show = useSelector((state) => state.showMenu);
 
-  const toggleCounterHandler = () => {
+  const toggleMenuHandler = () => {
     setOpen(false);
   };
 
@@ -23,7 +17,17 @@ const MainNavigation = () => {
       <div className={classes.mainContainer}>
         <div className={classes.headerLogo}>
           <NavLink to="/" className={classes.logo}>
-            Arch Amra
+            <Animation
+              type="popIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              timing="ease"
+              iteration="1"
+              fillMode="none"
+            >
+              Arch Amra
+            </Animation>
           </NavLink>
         </div>
         <div>
@@ -47,7 +51,7 @@ const MainNavigation = () => {
       {isOpen && (
         <div className={classes["menu-container"]}>
           <div className={classes["fade-in-text"]}>
-            <Navigation handleClick={toggleCounterHandler} />
+            <Navigation handleClick={toggleMenuHandler} />
           </div>
         </div>
       )}

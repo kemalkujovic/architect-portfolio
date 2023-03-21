@@ -18,6 +18,7 @@
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-easy-animations": "^0.3.2",
     "react-lazy-load-image-component": "^1.5.6",
     "react-loader-spinner": "^5.3.4",
     "react-redux": "^8.0.5",
