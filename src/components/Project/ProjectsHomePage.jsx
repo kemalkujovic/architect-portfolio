@@ -13,74 +13,51 @@ const data = [
     image: project1,
     description: description,
     title: "HOUSE 120",
+    id: "p1",
   },
   {
     image: project2,
     description: description,
     title: "HOUSE 120",
+    id: "p2",
   },
   {
     image: project3,
     description: description,
     title: "HOUSE 120",
+    id: "p3",
   },
   {
     image: project4,
     description: description,
     title: "HOUSE 120",
+    id: "p4",
   },
   {
     image: project4,
     description: description,
     title: "HOUSE 120",
+    id: "p5",
   },
   {
     image: project4,
     description: description,
     title: "HOUSE 120",
+    id: "p6",
   },
   {
     image: project4,
     description: description,
     title: "HOUSE 120",
+    id: "p7",
   },
   {
     image: project4,
     description: description,
     title: "HOUSE 120",
-  },
-  {
-    image: project4,
-    description: description,
-    title: "HOUSE 120",
-  },
-  {
-    image: project4,
-    description: description,
-    title: "HOUSE 120",
-  },
-  {
-    image: project4,
-    description: description,
-    title: "HOUSE 120",
-  },
-  {
-    image: project4,
-    description: description,
-    title: "HOUSE 120",
-  },
-  {
-    image: project4,
-    description: description,
-    title: "HOUSE 120",
-  },
-  {
-    image: project4,
-    description: description,
-    title: "HOUSE 120",
+    id: "p8",
   },
 ];
-console.log(data);
 const ProjectsHomePage = (props) => {
   return (
     <div className={classes.projetContainer}>
@@ -92,7 +69,8 @@ const ProjectsHomePage = (props) => {
             description={data.description}
             key={index}
             direction={`${index % 2 === 0 ? "row" : "row-reverse"}`}
-          ></ProjectsCard>
+            id={data.id}
+          />
         );
       })}
     </div>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 const ProjectsCard = (props) => {
+  console.log(props.id);
   return (
     <div className={classes.container}>
       <Grid item container direction={props.direction}>
@@ -13,7 +14,7 @@ const ProjectsCard = (props) => {
             <p>{props.title}</p>
             <p>{props.description}</p>
             <button className={classes.buttonDiscover}>
-              <Link to="/projects">DISCOVER MORE</Link>
+              <Link to={`/products/${props.id}}`}>DISCOVER MORE</Link>
             </button>
           </div>
         </Grid>

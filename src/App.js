@@ -27,6 +27,7 @@ import "./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf";
 import "./assets/fonts/Montserrat-Italic.ttf";
 import "./assets/fonts/Montserrat-Light.ttf";
 import "./assets/fonts/Montserrat-Regular.ttf";
+import ProjectsDetail from "./components/Project/ProjectsDetail";
 
 function App() {
   const router = createBrowserRouter([
@@ -51,6 +52,7 @@ function App() {
           path: "/contact",
           element: <Contact />,
         },
+        { path: "/projects/:productId", element: <ProjectsDetail /> },
       ],
     },
   ]);
