@@ -14,3 +14,11 @@
     margin: 0;
   }
 }
+@media screen and (max-width: 1200px) {
+  .projetContainer {
+    padding: 5vh 5vw;
+    display: block;
+    margin: 0;
+    gap: 8vh;
+  }
+}

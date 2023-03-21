@@ -34,23 +34,21 @@ const MainNavigation = () => {
           <Navigation></Navigation>
         </div>
         <div className={isOpen ? classes.activeMenu : classes.hamburgerIcon}>
-          {/* <MenuIcon onClick={toggleCounterHandler} fontSize="large"></MenuIcon> */}
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
             className={classes.hamburgerIcons}
+            duration={0.7}
+            color="white"
           />
         </div>
       </div>
-      {/* Hamburger Menu */}
+      {/* Show Menu */}
       {isOpen && (
         <div className={classes["menu-container"]}>
-          {/* <CloseIcon
-            className={classes.closeBtn}
-            fontSize="large"
-            onClick={toggleCounterHandler}
-          ></CloseIcon> */}
-          <Navigation handleClick={toggleCounterHandler} />
+          <div className={classes["fade-in-text"]}>
+            <Navigation handleClick={toggleCounterHandler} />
+          </div>
         </div>
       )}
     </>

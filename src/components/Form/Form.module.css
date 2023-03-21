@@ -22,6 +22,7 @@
 .form label {
   position: absolute;
   left: 0;
+  transition: all 0.3s ease;
 }
 
 .inputWrapper {
@@ -40,6 +41,8 @@
   background-color: transparent;
 }
 input:focus + label {
-  position: relative;
-  top: -60px;
+  transform: translateY(-150%);
+  font-size: 14px;
+  left: 0px;
+  opacity: 0.8;
 }

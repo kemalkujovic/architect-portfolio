@@ -1,12 +1,9 @@
 import React from "react";
 import classes from "./HomePage.module.css";
-import Footer from "../../components/Footer/Footer";
 import ProjectsHomePage from "../../components/Project/ProjectsHomePage";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Contact from "../Contact/Contact";
-import Form from "../../components/Form/Form";
-import ContactForm from "../../components/Form/ContactForm";
 const HomePage = () => {
   return (
     <>
@@ -18,14 +15,13 @@ const HomePage = () => {
               alt=""
               effect="blur"
             />
-            <span></span>
           </div>
         </div>
       </div>
       <div className={classes.projectsWrapper}>
         <ProjectsHomePage />
       </div>
-      <Footer></Footer>
+      <Contact></Contact>
     </>
   );
 };

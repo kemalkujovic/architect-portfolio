@@ -17,11 +17,12 @@
   margin-top: 280px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .backgroundContainer {
     background-color: #194869;
     height: auto;
   }
+
   .imageWrapper img {
     width: 100%;
     margin-top: 10px;
