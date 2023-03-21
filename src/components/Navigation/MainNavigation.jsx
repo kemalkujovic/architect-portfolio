@@ -42,7 +42,7 @@ const MainNavigation = () => {
             toggled={isOpen}
             toggle={setOpen}
             className={classes.hamburgerIcons}
-            duration={0.7}
+            duration={0.6}
             color="white"
           />
         </div>
