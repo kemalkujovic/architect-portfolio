@@ -1,6 +1,17 @@
 .contact {
   padding: 10% 20%;
 }
+.page-container {
+  min-height: 87vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
+}
+.footer {
+  margin-top: auto;
+}
 @media screen and (max-width: 800px) {
   .contact {
     padding: 40px 20px;

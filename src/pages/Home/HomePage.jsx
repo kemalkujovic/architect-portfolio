@@ -6,6 +6,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Contact from "../Contact/Contact";
 import Form from "../../components/Form/Form";
+import ContactForm from "../../components/Form/ContactForm";
 const HomePage = () => {
   return (
     <>
@@ -24,7 +25,6 @@ const HomePage = () => {
       <div className={classes.projectsWrapper}>
         <ProjectsHomePage />
       </div>
-      <Contact></Contact>
       <Footer></Footer>
     </>
   );
