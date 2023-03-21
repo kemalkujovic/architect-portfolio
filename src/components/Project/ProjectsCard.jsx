@@ -19,15 +19,17 @@ const ProjectsCard = (props) => {
         </Grid>
         <Grid item lg={6} xs={12}>
           <div className={classes.imageWrapper}>
-            <LazyLoadImage
-              effect="blur"
-              src={props.src}
-              alt="Project"
-              loading="lazy"
-              style={{
-                transition: "all 1s ease",
-              }}
-            />
+            <Link to={`/projects/${props.title}`}>
+              <LazyLoadImage
+                effect="blur"
+                src={props.src}
+                alt="Project"
+                loading="lazy"
+                style={{
+                  transition: "all 1s ease",
+                }}
+              />
+            </Link>
           </div>
         </Grid>
       </Grid>
