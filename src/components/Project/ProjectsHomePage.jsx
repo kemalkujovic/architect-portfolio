@@ -8,53 +8,56 @@ import classes from "./ProjectsHomePage.module.css";
 
 const description =
   "This is a home improvement project near Valencia for a family with two small children. The buyers were attracted to the house for its location and a land lot on the top of the slope with amazing views in the first place.";
-const data = [
+export const data = [
   {
     image: project1,
     description: description,
     title: "HOUSE 120",
-    id: "p1",
+    id: "p1}}",
+    subImage: [project1, project2, project3, project4],
   },
   {
     image: project2,
     description: description,
-    title: "HOUSE 120",
-    id: "p2",
+    title: "HOUSE 130",
+    id: "p2}}}",
+    subImage: [project1, project1, project1, project1],
   },
   {
     image: project3,
     description: description,
-    title: "HOUSE 120",
-    id: "p3",
+    title: "HOUSE 140",
+    id: "p3}",
+    subImage: [project2, project2, project2, project2],
   },
   {
     image: project4,
     description: description,
-    title: "HOUSE 120",
+    title: "HOUSE 150",
     id: "p4",
   },
   {
     image: project4,
     description: description,
-    title: "HOUSE 120",
+    title: "HOUSE 160",
     id: "p5",
   },
   {
     image: project4,
     description: description,
-    title: "HOUSE 120",
+    title: "HOUSE 170",
     id: "p6",
   },
   {
     image: project4,
     description: description,
-    title: "HOUSE 120",
+    title: "HOUSE 180",
     id: "p7",
   },
   {
     image: project4,
     description: description,
-    title: "HOUSE 120",
+    title: "HOUSE 190",
     id: "p8",
   },
 ];

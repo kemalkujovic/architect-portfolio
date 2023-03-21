@@ -13,7 +13,7 @@ const ProjectsCard = (props) => {
             <p>{props.title}</p>
             <p>{props.description}</p>
             <button className={classes.buttonDiscover}>
-              <Link to={`/projects/${props.id}}`}>DISCOVER MORE</Link>
+              <Link to={`/projects/${props.title}`}>DISCOVER MORE</Link>
             </button>
           </div>
         </Grid>
