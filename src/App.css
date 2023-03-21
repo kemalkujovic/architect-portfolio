@@ -102,6 +102,16 @@
   src: local("Montserrat-Italic"),
     url("./assets/fonts/Montserrat-Italic.ttf") format("truetype");
 }
+@font-face {
+  font-family: "CaviarDreams";
+  src: local("CaviarDreams"),
+    url("./assets/fonts/CaviarDreams.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CaviarDreamsItalic";
+  src: local("CaviarDreams_Italic"),
+    url("./assets/fonts/CaviarDreams_Italic.ttf") format("truetype");
+}
 * {
-  font-family: "LatoRegular";
+  font-family: "CaviarDreamsItalic";
 }

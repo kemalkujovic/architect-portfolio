@@ -28,6 +28,8 @@ import "./assets/fonts/Montserrat-Italic.ttf";
 import "./assets/fonts/Montserrat-Light.ttf";
 import "./assets/fonts/Montserrat-Regular.ttf";
 import ProjectsDetail from "./pages/Projects/ProjectsDetail";
+import "./assets/fonts/CaviarDreams.ttf";
+import "./assets/fonts/CaviarDreams_Italic.ttf";
 
 function App() {
   const router = createBrowserRouter([
