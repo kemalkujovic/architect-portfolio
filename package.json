@@ -19,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-easy-animations": "^0.3.2",
+    "react-image-gallery": "^1.2.11",
     "react-lazy-load-image-component": "^1.5.6",
     "react-loader-spinner": "^5.3.4",
     "react-redux": "^8.0.5",
@@ -26,7 +27,8 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "styled-components": "^5.3.8",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^2.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
