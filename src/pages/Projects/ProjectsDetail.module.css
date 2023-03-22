@@ -1,5 +1,6 @@
 .projectsImageContainer {
   padding: 5% 5%;
+  min-height: 69vh;
 }
 .projectsImageContainer img {
   width: 100%;
