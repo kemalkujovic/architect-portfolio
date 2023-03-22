@@ -12,15 +12,17 @@ function ProjectsDetail() {
         {filteredImage[0].subImage.map((el, index) => {
           return (
             <Grid key={index} item lg={3}>
-              <LazyLoadImage
-                key={index}
-                src={el}
-                effect="blur"
-                alt="Project"
-                style={{
-                  transition: "all 1s ease",
-                }}
-              />
+              <div className={classes.imageWrapper}>
+                <LazyLoadImage
+                  key={index}
+                  src={el}
+                  effect="blur"
+                  alt="Project"
+                  style={{
+                    transition: "all 1s ease",
+                  }}
+                />
+              </div>
             </Grid>
           );
         })}

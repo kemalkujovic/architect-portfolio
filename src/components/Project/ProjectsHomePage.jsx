@@ -13,11 +13,11 @@ export const data = [
     image: project1,
     description: description,
     title: "HOUSE 120",
-    id: "p1}}",
+    id: "p1",
     subImage: [
       project1,
       project2,
-      project3,
+      project2,
       project4,
       project4,
       project4,
@@ -28,7 +28,7 @@ export const data = [
     image: project2,
     description: description,
     title: "HOUSE 130",
-    id: "p2}}}",
+    id: "p2",
     subImage: [
       project1,
       project1,
@@ -45,7 +45,7 @@ export const data = [
     image: project3,
     description: description,
     title: "HOUSE 140",
-    id: "p3}",
+    id: "p3",
     subImage: [
       project2,
       project2,
