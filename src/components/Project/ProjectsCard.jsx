@@ -12,9 +12,12 @@ const ProjectsCard = (props) => {
           <div className={classes.descriptionWrapper}>
             <p>{props.title}</p>
             <p>{props.description}</p>
-            <button className={classes.buttonDiscover}>
-              <Link to={`/projects/${props.title}`}>DISCOVER MORE</Link>
-            </button>
+            <Link
+              className={classes.buttonDiscover}
+              to={`/projects/${props.title}`}
+            >
+              DISCOVER MORE
+            </Link>
           </div>
         </Grid>
         <Grid item lg={6} xs={12}>
