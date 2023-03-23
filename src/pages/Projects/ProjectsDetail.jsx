@@ -1,6 +1,5 @@
 import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
-
 import { useParams } from "react-router-dom";
 import { data } from "../../components/Project/ProjectsHomePage";
 import classes from "./ProjectsDetail.module.css";
