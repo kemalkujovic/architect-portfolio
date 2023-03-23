@@ -25,23 +25,33 @@ function ProjectsDetail() {
         <Grid item spacing={3} container>
           <LightGallery
             speed={500}
-            plugins={[lgThumbnail]}
+            enableSwipe
+            // plugins={[lgThumbnail]}
             elementClassNames={classes.lightGallery}
           >
             {filteredImage[0].subImage.map((el, index) => {
               return (
-                <Grid container data-src={el} spacing={3} key={index} lg={3}>
-                  <div data-src={el} className={classes.imageWrapper}>
-                    <img
-                      key={index}
-                      src={el}
-                      data-src={el}
-                      effect="blur"
-                      style={{
-                        transition: "all 1s ease",
-                      }}
-                    />
-                  </div>
+                <Grid
+                  container
+                  data-src={el}
+                  item
+                  spacing={3}
+                  key={index}
+                  lg={3}
+                >
+                  <Grid lg={12} item>
+                    <div data-src={el} className={classes.imageWrapper}>
+                      <LazyLoadImage
+                        key={index}
+                        src={el}
+                        data-src={el}
+                        effect="blur"
+                        style={{
+                          transition: "all 1s ease",
+                        }}
+                      />
+                    </div>
+                  </Grid>
                 </Grid>
               );
             })}

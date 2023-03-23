@@ -18,3 +18,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1200px) {
+  .lightGallery {
+    padding: 10% 0%;
+  }
+  .projectsImageContainer {
+    padding-left: 50px;
+  }
+}
