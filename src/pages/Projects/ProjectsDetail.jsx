@@ -1,11 +1,5 @@
 import LightGallery from "lightgallery/react";
-
 import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-zoom.css";
-import "lightgallery/css/lg-thumbnail.css";
-
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgZoom from "lightgallery/plugins/zoom";
 
 import { useParams } from "react-router-dom";
 import { data } from "../../components/Project/ProjectsHomePage";
@@ -16,47 +10,36 @@ import Footer from "../../components/Footer/Footer";
 function ProjectsDetail() {
   const params = useParams();
   const filteredImage = data.filter((el) => el.title === params.projectsId);
-  const onInit = () => {
-    console.log("lightGallery has been initialized");
-  };
+
   return (
     <>
       <div className={classes.projectsImageContainer}>
-        <Grid item spacing={3} container>
-          <LightGallery
-            speed={500}
-            enableSwipe
-            // plugins={[lgThumbnail]}
-            elementClassNames={classes.lightGallery}
-          >
-            {filteredImage[0].subImage.map((el, index) => {
-              return (
-                <Grid
-                  container
-                  data-src={el}
-                  item
-                  spacing={3}
-                  key={index}
-                  lg={3}
-                >
-                  <Grid lg={12} item>
-                    <div data-src={el} className={classes.imageWrapper}>
-                      <LazyLoadImage
-                        key={index}
-                        src={el}
-                        data-src={el}
-                        effect="blur"
-                        style={{
-                          transition: "all 1s ease",
-                        }}
-                      />
-                    </div>
-                  </Grid>
+        <LightGallery
+          speed={500}
+          enableSwipe
+          elementClassNames={classes.lightGallery}
+          download={false}
+        >
+          {filteredImage[0].subImage.map((el, index) => {
+            return (
+              <Grid container data-src={el} item spacing={3} key={index} lg={3}>
+                <Grid lg={12} item>
+                  <div data-src={el} className={classes.imageWrapper}>
+                    <LazyLoadImage
+                      key={index}
+                      src={el}
+                      data-src={el}
+                      effect="blur"
+                      style={{
+                        transition: "all 1s ease",
+                      }}
+                    />
+                  </div>
                 </Grid>
-              );
-            })}
-          </LightGallery>
-        </Grid>
+              </Grid>
+            );
+          })}
+        </LightGallery>
       </div>
       <Footer />
     </>
