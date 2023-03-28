@@ -18,6 +18,7 @@ function ProjectsDetail() {
           enableSwipe
           elementClassNames={classes.lightGallery}
           download={false}
+          mobileSettings
         >
           {filteredImage[0].subImage.map((el, index) => {
             return (
