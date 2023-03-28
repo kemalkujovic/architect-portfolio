@@ -2,6 +2,10 @@ import project1 from "../../assets/images/w1000-x21355gAb7wnYRGB.jpg";
 import project2 from "../../assets/images/w1000-k20156ZiYvIfOlJI.jpg";
 import project3 from "../../assets/images/w1000-m20157qVqqhbwaWo.jpg";
 import project4 from "../../assets/images/w1000-v20154MvaH4tLoUK.jpg";
+import house1 from "../../assets/images/house1.png";
+import house2 from "../../assets/images/house2.png";
+import house3 from "../../assets/images/house3.png";
+import house4 from "../../assets/images/house4.png";
 import ProjectsCard from "./ProjectsCard";
 
 import classes from "./ProjectsHomePage.module.css";
@@ -14,15 +18,7 @@ export const data = [
     description: description,
     title: "HOUSE 120",
     id: "p1",
-    subImage: [
-      project1,
-      project2,
-      project2,
-      project4,
-      project4,
-      project4,
-      project4,
-    ],
+    subImage: [house2, project2, project2, house1, house3, project4, project1],
   },
   {
     image: project2,
@@ -30,15 +26,15 @@ export const data = [
     title: "HOUSE 130",
     id: "p2",
     subImage: [
+      house1,
       project1,
       project1,
       project1,
-      project1,
       project2,
       project2,
+      project4,
       project2,
-      project2,
-      project2,
+      house2,
     ],
   },
   {
@@ -90,7 +86,7 @@ export const data = [
     ],
   },
   {
-    image: project4,
+    image: house4,
     description: description,
     title: "HOUSE 170",
     id: "p6",
@@ -122,7 +118,7 @@ export const data = [
     ],
   },
   {
-    image: project4,
+    image: house4,
     description: description,
     title: "HOUSE 190",
     id: "p8",
