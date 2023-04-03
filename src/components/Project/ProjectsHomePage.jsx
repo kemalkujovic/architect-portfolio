@@ -6,6 +6,11 @@ import house1 from "../../assets/images/house1.png";
 import house2 from "../../assets/images/house2.png";
 import house3 from "../../assets/images/house3.png";
 import house4 from "../../assets/images/house4.png";
+import dnevna1 from "../../assets/images/a1.jpg";
+import dnevna2 from "../../assets/images/a2.jpg";
+import dnevna3 from "../../assets/images/a4.jpg";
+import dnevna4 from "../../assets/images/a5.jpg";
+import dnevna5 from "../../assets/images/a7.jpg";
 import ProjectsCard from "./ProjectsCard";
 
 import classes from "./ProjectsHomePage.module.css";
@@ -18,7 +23,7 @@ export const data = [
     description: description,
     title: "HOUSE 120",
     id: "p1",
-    subImage: [house2, project2, project2, house1, house3, project4, project1],
+    subImage: [dnevna1, dnevna2, dnevna3, dnevna4, dnevna5],
   },
   {
     image: project2,
