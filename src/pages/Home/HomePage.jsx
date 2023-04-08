@@ -4,6 +4,7 @@ import ProjectsHomePage from "../../components/Project/ProjectsHomePage";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Contact from "../Contact/Contact";
+import homeImg from "../../assets/images/dnevna soba aaa (1).jpg";
 const HomePage = () => {
   return (
     <>
