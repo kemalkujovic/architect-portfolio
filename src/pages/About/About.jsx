@@ -6,8 +6,8 @@ const About = () => {
     <>
       <div className={classes["page-container"]}>
         <p>About Page</p>
-        <Footer></Footer>
       </div>
+      <Footer></Footer>
     </>
   );
 };
